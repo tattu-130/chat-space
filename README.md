@@ -8,16 +8,18 @@
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :chat
-- has_many :groups
+- has_many :chats
+- has_many :groups, through:  :groups_users
+- belong_to :groups_users
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :users, through:  :groups_users
-- has_many :chat
+- has_many :chats
+- has_many :group_user
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -31,7 +33,7 @@
 ## chatテーブル
 |Column|Type|Options|
 |------|----|-------|
-|massage|text|null: false|
+|massage|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
