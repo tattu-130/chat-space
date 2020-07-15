@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.side{
+  width: 300px;
+}
+
+.main{
+  width: calc(100vw - 300px);
+}
+
+.header{
+  height: 100px;
+  background-color: #253141;
+  display: flex;
+  align-items: center;
+}
+
+.block{
+  height: 20px;
+  width: 260px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.right{
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+.icon{
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.list{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+}
+
+.group{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.name{
+  font-size: 15px;
+  padding: 20px 20px 5px 20px;
+}
+
+.content{
+  font-size: 11px;
+  padding: 0 20px 40px 20px;
+}
+
+.info{
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  font-weight: bold;
+    &__test {
+      padding: 35px 0 0 40px;
+      color: #333333;
+      font-size: 20px;
+    }
+      &__member{
+        padding-top: 15px;
+        color: #999999;
+        font-size: 12px;
+      }
+}
+
+.button{
+  text-decoration: none;
+  color: #38aef0;
+  border: 1px solid #38aef0;
+  margin: 28px 40px auto auto;
+  padding: 0px 20px;
+  font-size: 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 72px;
+}
+
+.chat{
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 0 40px;
+  font-weight: bold;
+    &__user{
+      color: #333333;
+      font-size: 16px;
+      display: flex;
+      padding-bottom: 12px;
+        &__time{
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
+        }
+    }
+    &__coment{
+      color: #434A54;
+      font-size: 14px;
+      padding-bottom: 46px;
+    }
+}
+
+.footer{
+  height: 90px;
+  background-color: #d2d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  margin: 0 40px;
+  &__contents{
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &--text{
+      border-style: none;
+      padding: 0 45px 0 15px;
+      width: 100%;
+      height: 100%;
+    }
+    &--image{
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.btn{
+  background-color: #38aef0;
+  color: #ffffff;
+  border-style: none;
+  margin-left: 15px;
+  padding: 0 30px;
+  font-size: 16px;
+}

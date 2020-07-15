@@ -1,0 +1,28 @@
+.main
+  .info
+    .info__test
+      test
+      .info__member
+        Member : masa
+    .edit 
+    = link_to "#" , class: "button" do
+      Edit
+  .chat
+    .chat__user
+      masa
+      .chat__user__time
+        2020/7/14(Tue) 19:35
+    .chat__coment おはよう！
+    .chat__user
+      masa
+      .chat__user__time
+        2020/7/15(Wed) 12:00
+    .chat__coment 今日は一日中雨
+  .footer
+    %form.form
+      .form__contents
+        %input.form__contents--text{placeholder: "type a message", type: "text"}
+        %label{class: "form__contents--image"}
+          = icon('fas', 'image')
+          %input.hidden{type: "file"}
+      %button{type: "submit", class:'btn'} Send
