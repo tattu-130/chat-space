@@ -50,19 +50,17 @@
   background-color: #2f3e51;
 }
 
-.group{
+.Group{
   color: #ffffff;
   font-weight: bold;
-}
-
-.name{
-  font-size: 15px;
-  padding: 20px 20px 5px 20px;
-}
-
-.content{
-  font-size: 11px;
-  padding: 0 20px 40px 20px;
+  &__name{
+    font-size: 15px;
+    padding: 20px 20px 5px 20px;
+  }
+  &__content{
+    font-size: 11px;
+    padding: 0 20px 40px 20px;
+  }
 }
 
 .info{
