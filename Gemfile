@@ -30,23 +30,24 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'pry-rails'
-  gem 'rspec-rails', '~> 4.0.0.beta2'
-  gem 'rails-controller-testing'
-  gem 'factory_bot_rails'
-  gem 'faker'
   gem 'capistrano'
-  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano-rbenv'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 4.0.0.beta2'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'rubocop', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
@@ -62,12 +63,16 @@ group :production do
   gem 'unicorn', '5.4.1'
 end
 
+
+
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "haml-rails", ">= 1.0", '<= 2.0.1'
-gem 'font-awesome-sass'
 gem 'carrierwave'
-gem 'mini_magick'
 gem 'devise'
-gem 'jquery-rails'
 gem 'fog-aws'
+gem 'font-awesome-sass'
+gem "haml-rails", ">= 1.0", '<= 2.0.1'
+gem 'jquery-rails'
+gem 'mini_magick'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
